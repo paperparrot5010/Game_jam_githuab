@@ -109,4 +109,4 @@ layer_0/tile_data = PackedInt32Array(1507328, 4, 0, 1572864, 4, 1, 1638400, 4, 2
 position = Vector2(195, 349)
 
 [node name="Cookies" parent="." instance=ExtResource("6_n5ydv")]
-position = Vector2(552, 339)
+position = Vector2(550, 327)
