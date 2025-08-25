@@ -9,7 +9,7 @@ radius = 7.07107
 [sub_resource type="CircleShape2D" id="CircleShape2D_4hi7n"]
 radius = 6.08276
 
-[node name="Cookies" type="Area2D"]
+[node name="Cookies" type="Area2D" groups=["Cookies"]]
 collision_layer = 0
 script = ExtResource("1_qxovs")
 
