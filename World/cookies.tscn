@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvd6xqwdgvhhv"]
+
+[ext_resource type="Script" uid="uid://d5yvrxodghj1" path="res://World/cookies.gd" id="1_qxovs"]
+[ext_resource type="Texture2D" uid="uid://3wvemm67pkhe" path="res://assits/28_cookies.png" id="1_w1ueg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qxovs"]
+radius = 7.07107
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4hi7n"]
+radius = 6.08276
+
+[node name="Cookies" type="Area2D"]
+collision_layer = 0
+script = ExtResource("1_qxovs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_w1ueg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 3)
+shape = SubResource("CircleShape2D_qxovs")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(4, -3)
+shape = SubResource("CircleShape2D_4hi7n")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
